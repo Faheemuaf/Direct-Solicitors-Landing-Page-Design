@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+
+}
+
+#wrapper {
+    width: 100%;
+    overflow: hidden;
+}
+
+#header {
+    padding-top: 5px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+}
+.container:after {
+    display: block;
+    clear: both;
+    content: "";
+}
+
+
+.left-side {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 -4px;
+}
+
+.right-side {
+    width: 50%;
+    display: inline-block;
+    vertical-align: middle; 
+   
+}
+
+#right-text {
+    text-align: right;
+}
+
+#info-call {
+    padding-right: 20px;
+   
+}
+#call-btn, label, #submit, .claim-btn, #expert-heding, #expert-subheding,
+.left-side p, .right-side p ,h3  {
+
+    color: white;
+}
+
+#call-btn {
+    padding: 12px;
+    border-radius: 20px;
+    border: none;
+    background-color: #e31648;
+}
+
+#content, li, #expert-heding, #expert-subheding  {
+    padding-top: 20px;
+}
+.form-heading {
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+#survey-form {
+    background-color: #e31648;
+    border-radius: 4px;
+}
+
+input[type=text], input[type=email], input[type=tel], select, #submit {
+    width: 90%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+label {
+    padding: 10px 0 10px 20px;
+    display: inline-block;
+}
+
+#submit {
+    background-color: #890e2b;
+}
+
+#main-heading {
+    color: #e31648;
+}
+
+ul {
+    list-style: none;
+}
+  
+ul li::before {
+    content: "\25A0";
+    color: #e31648;
+    font-weight: bold;
+    display: inline-block; 
+    width: 32px;
+}
+
+#win-btn {
+    padding: 10px;
+}
+
+#question-mark {
+    display: inline-block;
+    font-size: 60px;
+    font-weight: bold;
+    margin-left:-20px;
+    vertical-align: middle;
+}
+.claim-btn, #submit {
+    border: none;
+    cursor: pointer;
+    margin-top: 12px;
+    margin-bottom: 12px;
+
+}
+.claim-btn {
+    width: 270px;
+    background-color: #0087fa;
+    padding: 12px;
+    border-radius: 4px;
+
+}
+.no-win-fee-section, .expert-solicitor {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.boxes {
+    text-align: justify;
+    margin-top: 50px;
+}
+.boxes:after {
+    content: '';
+    width: 100%; 
+    display: inline-block;
+} 
+
+.box {
+    width: 30%;
+    height: 300px;
+    border: 2px solid #f9f9f9;
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+}
+
+.img-box img{
+    border-radius: 50%;
+    border: 5px solid #f9f9f9;
+    margin-top: -40px;
+   
+}
+
+.box-heading, .box-text, #footer,.heading, .sub-heading {
+    padding: 20px;
+}
+
+.expert-solicitor {
+    background: url("../images/certi.jpg")
+}
+
+#expert-heding, #expert-subheding {
+    padding-bottom: 20px;
+}
+
+.left-side p, .right-side p ,h3{
+    text-align: justify;
+    padding: 30px;
+}
+#start-btn {
+    background-color: #353535;
+    float: left;
+    margin-left: 25px;
+}
+
+#footer {
+    background-color: #282828;
+    text-align: center;
+}
+
+@media (max-width: 400px) {
+    #header .left-side {
+        display: inline-block;
+        width: 50%;
+    }
+    #header .right-side {
+        display: inline-block;
+        width: 50%;
+        vertical-align: middle;
+    }
+    .left-side{
+        display: none;
+    }
+    .right-side {
+        width: 100%;
+    }
+    .right-side .form-heading {
+        text-align: center;
+    }
+    .no-win-fee-section {
+        margin-top: 30px;
+        color: #e31648;
+    }
+
+    .box {
+        margin-bottom: 50px;
+        width: 100%;
+    }
+    .right-side span, .sub-heading {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .key-points {
+        display: none;
+    }
+}
